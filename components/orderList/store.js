@@ -23,7 +23,7 @@ async function searchOrderList(filterPack){
    
 }
 
-function deleteOrdersPack(id){
+function deleteOrderList(id){
     return model.deleteOne({
         _id:id
     });
@@ -32,5 +32,5 @@ function deleteOrdersPack(id){
 module.exports = {
     save:storeOrderList,
     find:searchOrderList,
-    remove:deleteOrdersPack
+    remove:deleteOrderList
 }

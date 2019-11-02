@@ -32,13 +32,13 @@ function storeOrderList(creator, duration){
 })
 }
 
-function getOrdersPack(filterPack){
+function getOrderList(filterPack){
     return new Promise((resolve, reject)=>{
         resolve(store.find(filterPack));
     })
 }
 
-function deleteOrdersPack(id){
+function deleteOrderList(id){
     return new Promise((resolve, reject) =>{
         if(!id){
             reject('Invalid ID')
@@ -56,6 +56,6 @@ function deleteOrdersPack(id){
 
 module.exports = {
     save:storeOrderList,
-    list:getOrdersPack,
-    delete:deleteOrdersPack
+    list:getOrderList,
+    delete:deleteOrderList
 }
