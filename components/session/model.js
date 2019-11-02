@@ -13,6 +13,6 @@ const mySchema = new Schema({
 });
 
 
-const model = mongoose.model('session', mySchema); //aqui pasamos el esquema exclusivo en la base de datos para User
+const model = mongoose.model('session', mySchema); 
 
 module.exports = model;

@@ -19,7 +19,7 @@ async function login(loggedUser) {
     const authUser = await User.findOne(filter);
     if(authUser){
         const jToken = jwt.sign({loggedUser}, config.secret);
-        // const auth ={token:jToken}
+     
         const session={
             user:authUser,
             token:jToken
@@ -28,10 +28,7 @@ async function login(loggedUser) {
         return new Model(session);
 
     }
-    // var modelLogin = new Login()
-    // modelLogin.user = users;
-    // modelLogin.success = true;
-    // return modelLogin;
+    
 }
 
 module.exports = {
