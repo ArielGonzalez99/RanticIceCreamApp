@@ -1,0 +1,28 @@
+{
+  "name": "rantic-ice_cream-app",
+  "version": "0.0.1",
+  "description": "Rantic's Ice Cream App",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Ariel Augusto Gonzalez Batista",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.7"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArielGonzalez99/RanticIceCreamApp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ArielGonzalez99/RanticIceCreamApp/issues"
+  },
+  "homepage": "https://github.com/ArielGonzalez99/RanticIceCreamApp#readme"
+}
